@@ -7,8 +7,8 @@ import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import { Country } from "graphql/queries/types/countries";
 import InterestsIcon from "@mui/icons-material/Interests";
-import "./CountryCard.scss";
 import { CardActions } from "@mui/material";
+import "./CountryCard.scss";
 
 type CountryCardProp = {
   data: Country;
@@ -18,7 +18,7 @@ export const CountryCard = ({
   data: { code, name, capital, continent, phone, currency, languages },
 }: CountryCardProp) => {
   return (
-    <Card variant="outlined" sx={{ overflow: "unset", borderRadius: "4px" }}>
+    <Card variant="outlined" sx={{ overflow: "visible", borderRadius: "8px" }}>
       <CardContent className="body">
         <Box className="body__header">
           <img

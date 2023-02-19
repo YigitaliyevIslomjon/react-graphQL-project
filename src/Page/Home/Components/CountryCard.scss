@@ -2,17 +2,12 @@
 .body{
     display: flex;
     justify-content: space-between;
-  
-}
-.body__header{
-    display: flex;
-    align-items: center;
-    gap:10px
-}
 
-.footer__icon{
-    width: 15px;
-    height: 15px;
+    &__header{
+        display: flex;
+        align-items: center;
+        gap:10px
+    }
 }
 
 .footer{
@@ -20,18 +15,23 @@
     align-items: center;
     justify-content: space-between;
     gap:10px;
-}
 
-.footer__desc{
+    &__icon{
+    width: 15px;
+    height: 15px;
+    }
+    
+    &__desc{
     display: flex;
     align-items: center;
     gap: 6px
-}
+    }
 
-.footer__languages{
+    &__languages{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     word-break: break-all;
+    }
+
 }
